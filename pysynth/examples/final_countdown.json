@@ -1,0 +1,86 @@
+{
+    "name": "Final Countdown",
+    "bpm": 120,
+    "notes": [
+        { 
+            "note": "C#5", 
+            "duration": "s"
+        },
+        { 
+            "note": "B4", 
+            "duration": "s"
+        },
+        { 
+            "note": "C#5", 
+            "duration": "q"
+        },
+        { 
+            "note": "F#4", 
+            "duration": "h"
+        },
+        { 
+            "note": "D5", 
+            "duration": "s"
+        },
+        { 
+            "note": "C#5", 
+            "duration": "s"
+        },
+        { 
+            "note": "D5", 
+            "duration": "e"
+        },
+        { 
+            "note": "C#5", 
+            "duration": "e"
+        },
+        { 
+            "note": "B4", 
+            "duration": "h"
+        },
+        { 
+            "note": "D5", 
+            "duration": "s"
+        },
+        { 
+            "note": "C#5", 
+            "duration": "s"
+        },
+        { 
+            "note": "D5", 
+            "duration": "q"
+        },
+        { 
+            "note": "F#4", 
+            "duration": "h"
+        },
+        { 
+            "note": "B4", 
+            "duration": "s"
+        },
+        { 
+            "note": "A4", 
+            "duration": "s"
+        },
+        { 
+            "note": "B4", 
+            "duration": "e"
+        },
+        { 
+            "note": "A4", 
+            "duration": "e"
+        },
+        { 
+            "note": "G#4", 
+            "duration": "e"
+        },
+        { 
+            "note": "B4", 
+            "duration": "e"
+        },
+        { 
+            "note": "A4", 
+            "duration": "q"
+        }
+    ]
+}

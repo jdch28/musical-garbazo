@@ -1,6 +1,24 @@
 # A4 = 440
 REFERENCE_FREQUENCY = 440
 
+def generate_note_info(note_info, bpm):
+    return {
+        'freq': generate_note_frequency(note_info['note']),
+        'duration': note_duration(note_info['duration'], bpm)
+    }
+
+def note_duration(value, bpm):
+    duration_reference = {
+        'w': 4,
+        'h': 2,
+        'q': 1,
+        'e': 0.5,
+        's': 0.25,
+    }
+
+    return (60/bpm) * duration_reference[value]
+
+
 # This is based on a 12 TET system
 # The basic formula for the frequencies of the notes of the equal tempered scale is given by
 # fn = f0 * (a)n
@@ -11,9 +29,8 @@ REFERENCE_FREQUENCY = 440
 def generate_note_frequency(note):
     half_step_difference = count_half_steps(note)
     magic_number = 2**(1.0 / 12)
-    note_frequency = REFERENCE_FREQUENCY * (magic_number**half_step_difference)
 
-    return note_frequency
+    return REFERENCE_FREQUENCY * (magic_number**half_step_difference)
 
 # This takes a full note name (C3, Bb8, G#3) and gets the half step difference between the note and A4
 def count_half_steps(note):
@@ -39,8 +56,6 @@ def count_half_steps(note):
 
     note_name = note[0:-1].capitalize()
     note_octave = int(note[-1])
-
     octave_difference = note_octave - 4
-    half_step_count = note_reference[note_name] + 12 * octave_difference
 
-    return half_step_count
+    return note_reference[note_name] + 12 * octave_difference

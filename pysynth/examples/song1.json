@@ -1,0 +1,26 @@
+{
+    "name": "Song Example 1",
+    "bpm": 100,
+    "notes": [
+        { 
+            "note": "C4", 
+            "duration": "q"
+        },
+        { 
+            "note": "E4", 
+            "duration": "q"
+        },
+        { 
+            "note": "G4", 
+            "duration": "q"
+        },
+        { 
+            "note": "B4", 
+            "duration": "q"
+        },
+        { 
+            "note": "C5", 
+            "duration": "h"
+        }
+    ]
+}
